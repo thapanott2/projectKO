@@ -1,0 +1,8 @@
+body, td, th, caption, a, p, input, select, textarea, div, span, button, label {
+	font-family: tahoma;
+	font-size: 10pt;
+}
+
+input, select, textarea, button {
+	margin: 2px;
+}

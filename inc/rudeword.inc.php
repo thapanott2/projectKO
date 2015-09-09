@@ -1,0 +1,19 @@
+<?php
+function get_rudewords($str) {
+
+	$rude_words = array("¤ÇÂ", "àÂç´", "ËÕ", "ËÁÍÂ", "áµ´", "à§ÕèÂ¹", "àÊ×Í¡", "àÕéËÕéÂ", "´Í¡·Í§", "fuck", "pussy"); 
+	
+	$rudes = array();
+	$len = count($rude_words);
+	
+	for($i=0; $i<$len; $i++) {
+		$r = $rude_words[$i];
+		if(eregi($r, $str)) {
+			array_push($rudes, $r);
+		}
+	}
+	
+	return $rudes;
+	
+}
+?>
